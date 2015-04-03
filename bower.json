@@ -1,0 +1,22 @@
+{
+  "name": "insightfulit",
+  "version": "0.0.",
+  "authors": [
+    "mike suggitt <mike.suggitt@gmail.com>"
+  ],
+  "description": "website",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "jquery.scrollTo": "~2.1.0",
+    "bootstrap-sass": "~3.3.4"
+  }
+}

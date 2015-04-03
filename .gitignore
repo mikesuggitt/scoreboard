@@ -1,0 +1,15 @@
+node_modules
+test-results.xml
+bower_components
+coverage
+
+# IntelliJ
+.idea
+.idea_modules/
+*.iml
+public/app.built.js
+public/*.css
+public/*.css
+public/*.map
+
+.DS_Store
