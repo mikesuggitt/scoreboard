@@ -1,11 +1,13 @@
 @import 'components/typography';
+@import 'components/buttons';
 @import 'components/nav';
-@import 'components/hero';
-@import 'components/banner';
 @import 'components/section';
-@import 'components/panel';
+@import 'components/forms';
+@import 'components/modal';
 
-@import 'sections/home';
+@import 'components/game';
+
+@import 'sections/dashboard';
 
 $icon-font-path: '../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
 $fa-font-path: '../../bower_components/components-font-awesome/fonts';
@@ -16,6 +18,15 @@ $fa-font-path: '../../bower_components/components-font-awesome/fonts';
 html, body {
     height: 100%;
 }
+
+body {
+//    background: url('http://www.dream-wallpaper.com/free-wallpaper/nature-wallpaper/grass-football-pitches-wallpaper/1920x1200/free-wallpaper-17.jpg');
+    background: url('https://thevoiceofateenager.files.wordpress.com/2012/03/test-cricket-ball.jpg');
+
+    background-size: cover;
+    padding-top: 50px;
+}
+
 
 .overlay {
     position: absolute;

@@ -1,0 +1,66 @@
+.labelled-input {
+    label {
+        transform-origin: left center 0;
+        color: #999;
+        text-transform: capitalize;
+        font-weight: normal;
+        margin-bottom: 0;
+    }
+
+    input {
+        background: transparent;
+        position: relative;
+        z-index: 1;
+    }
+
+    input[type="text"]:invalid ~ label {
+        transition: all 300ms ease-out 0s;
+        transform: translate3d(0px, -25px, 0px);
+        font-style: italic;
+    }
+
+    input[type="text"]:focus ~ label,
+    input[type="text"]:valid ~ label {
+        transform: translate3d(0px, -45px, 0px) scale(0.85);
+        font-style: normal;
+    }
+}
+
+
+
+.form-group {
+    .form-control:not(.use-bootstrap) {
+        border: none;
+        border-bottom: 1px solid #CCCCCC;
+        box-shadow: none;
+        padding-left: 0px;
+        height: 34px;
+        border-radius: 0px;
+
+        &:focus {
+            border-color: #66afe9;
+        }
+    }
+
+    textarea .form-control {
+        resize: none !important;
+    }
+
+    &.has-error {
+        .help-block {
+            font-size: 12px;
+            line-height: 20px;
+            padding-left: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .form-control {
+            border-color: #C64461;
+
+            &:focus {
+                border-color: #C64461;
+            }
+        }
+    }
+}

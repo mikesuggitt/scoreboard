@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="owzat">
 <head>
     <meta charset="utf-8">
-    <title>InsightfulIT</title>
+    <title>Owzat</title>
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="/style.css"/>
+
+
 </head>
-<body>
+<body >
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -17,7 +19,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#home">Brand</a>
+            <a class="navbar-brand" href="#home">Owzat</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,72 +37,18 @@
 </nav>
 
 
-<section id="home" class="jumbotron hero">
-    <div class="overlay">
-        <div class="container banner">
-            <div class="jumbotron">
-                <h1>Insightful IT</h1>
+<div ng-view></div>
 
-                <p>Providing high quality custom software solutions</p>
-
-                <div class="more">
-                    <a href="#services">
-                        <div class="arrow-down bounce"><span class="glyphicon glyphicon-chevron-down"></span></div>
-                    </a>
-
-                </div>
-            </div>
-
-
-        </div>
-
-
-    </div>
-</section>
-
-
-<section id="services" class="">
-    <h2>Services</h2>
-    <div class="contsiner">
-        <div class="row panel horizontal">
-            <div class="col-md-4 panel">
-                <span class="icon">
-                    <i class="fa fa-desktop"></i>
-                </span>
-                <h3>Consultation</h3>
-                <p>Using expert domain knowledge we are able to provide impartial and considered advice to your business in order to aid you in making the correct choices regarding the development of your software products.</p>
-            </div>
-
-            <div class="col-md-4 panel">
-                <span class="icon">
-                    <i class="fa fa-desktop"></i>
-                </span>
-                <h3>Products</h3>
-                <p>Using expert domain knowledge we are able to provide impartial and considered advice to your business in order to aid you in making the correct choices regarding the development of your software products.</p>
-            </div>
-
-            <div class="col-md-4 panel">
-                <span class="icon">
-                    <i class="fa fa-desktop"></i>
-                </span>
-                <h3>Development</h3>
-                <p>Using expert domain knowledge we are able to provide impartial and considered advice to your business in order to aid you in making the correct choices regarding the development of your software products.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-</section>
-
-<section id="clients">
-    <h2>Clients</h2>
-</section>
 
 <script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
-<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/javascripts/app.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-route/angular-route.js"></script>
+<script src="/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<!--<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+<script src="/js/app.js"></script>
+<script src="/js/route.js"></script>
+<script src="/js/dashboard/controllers/dashboardController.js"></script>
+<script src="/js/dashboard/directives/game/game.js"></script>
 </body>
 </html>

@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<form class="form" name="createGameForm" ng-submit="onSubmit(createGameForm)">
+    <h2>Create new game</h2>
 
-</body>
-</html>
+    <div class="form-group labelled-input">
+        <input type="text" required class="form-control" ng-model="newGame.home" name="home_team"/>
+        <label class="control-label">Home team</label>
+    </div>
+    <div class="form-group labelled-input">
+        <input type="text" required class="form-control" ng-model="newGame.away" name="away_team"/>
+        <label class="control-label">Away team</label>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Create</button>
+</form>

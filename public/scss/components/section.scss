@@ -1,19 +1,14 @@
 section {
-    height:100%;
-    width: 100%;
+    position: absolute;
+    top:60px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.6);
     padding: 10px;
 
-    & > h2 {
-        padding-top: 40px;
-        margin-top: -40px;
-        font-family: monserrat !important;
-        font-size: 4vw;
-        color: #264757;
-        border-bottom: 1px solid #264757;
-        text-align: center;
-    }
-
-    & h3 {
-        text-align: center;
+    h1 {
+        color: #ffffff;
     }
 }
+
